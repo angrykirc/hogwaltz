@@ -1,7 +1,10 @@
 # Hogwaltz
 ## NGINX and Lua (OpenResty)-based L7 anti-bot/DoS script
+
 Inspiration drawn by: 
+
 https://github.com/C0nw0nk/Nginx-Lua-Anti-DDoS
+
 https://github.com/TecharoHQ/anubis
 
 Hogwaltz works in a very similar way to the above projects:

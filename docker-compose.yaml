@@ -1,0 +1,10 @@
+services:
+  memcached1:
+    image: memcached:latest
+    network_mode: host
+    command: memcached -v -t 4 -m 64 -p 11211
+    restart: always
+  
+  hogwaltz:
+    build: .
+    network_mode: host
