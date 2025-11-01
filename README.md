@@ -1,7 +1,7 @@
 # Hogwaltz
 ## NGINX and Lua (OpenResty)-based L7 anti-bot/DoS script
 
-Inspiration drawn by: 
+Inspiration drawn from: 
 
 https://github.com/C0nw0nk/Nginx-Lua-Anti-DDoS
 
@@ -14,6 +14,7 @@ If the challenge is solved, client is allowed to access the content. In case cli
 There is also an option to notify an external API (for example, a firewall) of an attack.
 
 The main difference from aforementioned projects is that this script is stateful. It uses memcached for storing runtime data. Memcached was chosen for it's very high resource efficiency and 'key expiration' feature.
+Since an external storage is used for runtime data, it's possible to launch two or more different nginx processes without any implications.
 
 I created this project mainly because I wanted something that is very easy to integrate with nginx, but also highly scale-able and configurable to an extent.
 Please keep in mind that this is not a complete solution, but more like a template, which you can modify to your needs. I made this script in my spare time; there is a lot of room for optimization and epic bugs may be present.
